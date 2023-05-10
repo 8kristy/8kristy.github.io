@@ -11,6 +11,13 @@
   color: white;
 }
 
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10%;
+}
+
 .topnav {
   background-color: #333;
   overflow: hidden;
