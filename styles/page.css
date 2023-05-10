@@ -16,6 +16,14 @@
 .content {
   display: flex;
   align-items: center;
+}
+
+.content.cards {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.content.main {
   flex-direction: column;
   padding: 10%;
 }
