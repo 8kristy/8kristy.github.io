@@ -1,13 +1,18 @@
+@import "colours";
+
+$width: 300px;
+$spacing: 20px;
+
 .card {
-  padding: 20px;
-  width: 300px;
-  margin: 20px;
+  padding: $spacing;
+  width: $width;
+  margin: $spacing;
   border-radius: 15px;
-  background-color: #f3f3f3;
+  background-color: $card-colour;
 
   > img {
     height: 200px;
-    width: 300px;
+    width: $width;
     object-fit: cover;
   }
 }
