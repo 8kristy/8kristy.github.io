@@ -1,0 +1,99 @@
+* {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+button {
+  margin: 10px;
+  padding: 10px;
+  background-color: #8e2544;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.header {
+  font-size: xxx-large;
+  font-weight: bold;
+  padding: 1rem;
+  background-color: #8e2544;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.content.main {
+  flex-direction: column;
+  padding: 10%;
+}
+.content.cards {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.content.text {
+  padding-top: 2%;
+  font-size: 20px;
+}
+
+.card {
+  padding: 20px;
+  width: 300px;
+  margin: 20px;
+  border-radius: 15px;
+  background-color: #f3f3f3;
+}
+.card > img {
+  height: 200px;
+  width: 300px;
+  object-fit: cover;
+}
+
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: 0.3s;
+}
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+.topnav a.active {
+  background-color: #8e2544;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15%;
+}
+form input, form textarea {
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  resize: none;
+}
+form .submit-button {
+  border: none;
+  background-color: #8e2544;
+  color: white;
+}
+
+/*# sourceMappingURL=main.css.map */
