@@ -4,11 +4,10 @@
   margin: 20px;
   border-radius: 15px;
   background-color: #f3f3f3;
-}
 
-.card > img {
-  width: 300px;
-  height: 200px;
-  object-fit: cover;
-  background-color: #f3f3f3;
+  > img {
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+  }
 }
