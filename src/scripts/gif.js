@@ -1,5 +1,6 @@
-var xhr = $.get("https://api.giphy.com/v1/gifs/trending?api_key=T6LoHEjeXh8kuRbbLTs8FGmJoll68mZd&limit=10&rating=g");
-xhr.done(function(data) { 
+fetch('https://api.giphy.com/v1/gifs/trending?api_key=T6LoHEjeXh8kuRbbLTs8FGmJoll68mZd&limit=10&rating=g')
+.then((response) => response.json())
+.then((data) => {
   var mainBody = document.getElementsByClassName("content")[0];
 
   data.data.forEach(gif => {
@@ -12,5 +13,4 @@ xhr.done(function(data) {
   
     mainBody.appendChild(card);
   });
-
 });
