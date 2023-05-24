@@ -4,7 +4,6 @@ This is a website that was made for training materials. It has a few pages which
 
 ## Dependencies
 - SASS
-- @giphy/react-components @giphy/js-fetch-api
 
 ## Running locally
 
