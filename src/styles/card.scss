@@ -9,6 +9,12 @@ $spacing: 20px;
   margin: $spacing;
   border-radius: 15px;
   background-color: $card-colour;
+  transition: 0.5s;
+
+  &:hover{
+    transform: scale(1.1, 1.1);
+    background-color: $card-hover-colour;
+  }
 
   > img {
     height: 200px;
