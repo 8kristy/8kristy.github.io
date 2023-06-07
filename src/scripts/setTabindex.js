@@ -8,7 +8,6 @@ setTabIndexForElementAndChild = function(elementArray) {
 };
 
 window.addEventListener('DOMContentLoaded', () => {
-  console.log(document.getElementsByClassName("content main"));
   setTabIndexForElementAndChild(document.getElementsByClassName("content main"));
   setTabIndexForElementAndChild(document.getElementsByClassName("content text"));
   setTabIndexForElementAndChild(document.getElementsByClassName("card"));
