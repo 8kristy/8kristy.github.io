@@ -5,5 +5,5 @@ setTabIndexForElement = function(elementArray) {
 };
 
 window.addEventListener('DOMContentLoaded', () => {
-  setTabIndexForElement(document.getElementsByClassName("card"));
+  setTabIndexForElement(document.getElementsByTagName("figure"));
 });
