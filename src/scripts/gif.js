@@ -9,6 +9,7 @@ fetch('https://api.giphy.com/v1/gifs/trending?api_key=T6LoHEjeXh8kuRbbLTs8FGmJol
   
     var card = document.createElement('div');
     card.className = "card";
+    card.tabIndex = 0;
     card.appendChild(image);
   
     mainBody.appendChild(card);
