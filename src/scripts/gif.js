@@ -7,8 +7,7 @@ fetch('https://api.giphy.com/v1/gifs/trending?api_key=T6LoHEjeXh8kuRbbLTs8FGmJol
     var image = document.createElement("img");
     image.src = gif.images.original.url;
   
-    var card = document.createElement('div');
-    card.className = "card";
+    var card = document.createElement('figure');
     card.tabIndex = 0;
     card.appendChild(image);
   
