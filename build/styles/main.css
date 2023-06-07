@@ -22,20 +22,20 @@ header {
   justify-content: center;
 }
 
-.content {
+section {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
-.content.main {
+section.main {
   flex-direction: column;
   padding: 10%;
 }
-.content.cards {
+section.cards {
   flex-direction: row;
   flex-wrap: wrap;
 }
-.content.text {
+section.text {
   padding-top: 2%;
   font-size: 20px;
 }
