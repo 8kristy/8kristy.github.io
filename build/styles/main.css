@@ -62,8 +62,8 @@ section.text {
 }
 .overlay img {
   position: fixed;
-  width: auto;
-  height: 90%;
+  max-width: 90%;
+  max-height: 90%;
   inset: 0;
   margin: auto;
 }
