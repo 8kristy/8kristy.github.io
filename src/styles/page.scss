@@ -22,6 +22,7 @@ header {
   color: white;
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 section {
@@ -42,5 +43,9 @@ section {
   &.text {
     padding-top: 2%;
     font-size: 20px;
+
+    @media screen and (max-width: 600px) {
+      padding: 5% 10% 0;
+    }
   }
 }
