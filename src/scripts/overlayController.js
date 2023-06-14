@@ -7,6 +7,11 @@ addOnClickEvent = function(elementArray) {
   const overlay = document.getElementsByClassName("overlay")[0];
   const image = overlay.getElementsByTagName("img")[0];
   const background = overlay.getElementsByClassName("background")[0];
+  const closeButton = overlay.getElementsByTagName("button")[0];
+
+  closeButton.addEventListener("click", () => {
+    overlay.style.display = "none";
+  });
 
   background.addEventListener("click", () => {
     overlay.style.display = "none";

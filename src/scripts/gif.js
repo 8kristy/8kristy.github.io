@@ -13,10 +13,21 @@ fetch('https://api.giphy.com/v1/gifs/trending?api_key=T6LoHEjeXh8kuRbbLTs8FGmJol
     const overlay = document.getElementsByClassName("overlay")[0];
     const background = overlay.getElementsByClassName("background")[0];
     const overlayImage = overlay.getElementsByTagName("img")[0];
+    const closeButton = overlay.getElementsByTagName("button")[0];
+
+    closeButton.addEventListener("click", () => {
+      overlay.style.display = "none";
+    });
 
     background.addEventListener("click", () => {
       overlay.style.display = "none";
     });
+
+    window.addEventListener("keydown", (e) => {
+      if (e.key == "Escape"){
+        overlay.style.display = "none";
+      }
+    })
 
     card.addEventListener("click", () => {
       overlayImage.src = gif.images.original.url;

@@ -73,4 +73,21 @@ section {
       inset: 0;
       margin: auto;
     }
+
+    button {
+      top: 0;
+      right: 0;
+      position: fixed;
+      display: flex;
+      font-weight: bold;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      height: 30px;
+      width: 30px;
+      border-radius: 50px;
+      background: white;
+      color: $main-colour; 
+      z-index: 1;
+    }
 }
