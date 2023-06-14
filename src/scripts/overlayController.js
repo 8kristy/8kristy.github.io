@@ -12,6 +12,12 @@ addOnClickEvent = function(elementArray) {
     overlay.style.display = "none";
   });
 
+  window.addEventListener("keydown", (e) => {
+    if (e.key == "Escape"){
+      overlay.style.display = "none";
+    }
+  })
+
   Array.from(elementArray).forEach((element) => {
     element.addEventListener("click", () => {
       setAndShowImage(element, overlay, image);
